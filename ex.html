@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="mouseover(this)" onmouseout="mouseout(this)"  onclick = "mad(this)" style="background-color: olive;width: 300px; height: 220px; text-align: center;">
+        Mouse over me</div>
+        <button style="background-color: blue; color: #fff; padding: 3rem;" ondblclick="my_fun(this)">click me</button>
+        <p id="demo"></p>
+    <script>
+        const element = "Finding html ele";
+
+document.getElementById("demo").innerHTML = 
+"The text from the intro paragraph is: " + element;
+        function mouseover(obj){
+            obj.innerHTML = "Click me"
+            obj.style.backgroundColor = "palevioletred";
+            obj.style.color = "#fff";
+        }
+        function mouseout(obj){
+            obj.innerHTML = "Mouse Hover me"
+            obj.style.backgroundColor = "olive";
+        }
+        function mad(obj){
+            const cars = ["Saab", "Volvo", "BMW"];
+            for (let i in cars){
+            obj.innerHTML += cars[i];
+            }
+            obj.style.color = "#fff";
+        }
+        function my_fun(obj){
+            alert("You clicked a button")
+        }
+    </script>
+</body>
+</html>
