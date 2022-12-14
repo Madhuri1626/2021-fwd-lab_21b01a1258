@@ -1,0 +1,104 @@
+<!--21B01A1236-->
+<!--Create a registration form-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>--21B01A1236--</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form name="registration" class="registration-form" onsubmit="">
+        <table width="100%">
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" placeholder="Your Name" id="name" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text" placeholder="Your Email" id="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="Password">Password:</label></td>
+            <td><input type="password" placeholder="Enter Your Password" id="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="PhoneNumber">Phone Number:</label></td>
+            <td><input type="number" placeholder="Enter Your Number" id="phone_no" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+              Male:<input type="radio" name="Gender" id="male"/>Female:<input
+                type="radio"
+                name="Gender"
+                id="female"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="language">Language</label></td>
+            <td>
+              <select id="languages">
+                <option id=""></option>
+                <option id="op2">English</option>
+                <option id="op3">Telugu</option>
+                <option id="op4">Hindi</option>
+                <option id="op5">Tamil</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="about">Address</label></td>
+            <td><textarea placeholder="Write About Yourself"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button onclick="fun()">Submit</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script>
+      function fun(){
+        let n=document.getElementById("name").value
+        name_len=n.length
+        if(name_len<6 || name_len>30){
+            alert("Invalid name")
+        }
+        let password=document.getElementById("password").value
+        pass_len=password.length
+        if(pass_len<5 || pass_len>15)
+          {
+            alert("Invalid password")
+          }
+          let email=document.getElementById("email").value
+          if(!email.match(/^\w+([|\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/)){
+             alert("Invalid email id")
+          }
+          let phone_no=document.getElementById("phone_no").value
+          let p=phone_no.toString()
+          phone_len=p.length
+          if(phone_len<10 || phone_len>10){
+            alert("Invalid phone number")
+          }
+          else{
+            if(p[0]==0){
+               alert("First digit should not be 0")
+            }
+          }
+          let male=document.getElementById("male").checked
+          let female=document.getElementById("female").checked
+          if(male==false && female==false){
+            alert("Select gender")
+          }
+          var ddlFruits = document.getElementById("languages");
+          if (ddlFruits.value == "") {
+            alert("Please select an option!");
+          }
+      };
+    </script>
+  </body>
+</html>

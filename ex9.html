@@ -1,0 +1,40 @@
+<!--21B01A1258-->
+<!--Write a javascript to demonstrate DOM elements,events-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>--21B01A1258--</title>
+  </head>
+  <body>
+    <h1 id="demo1">hi</h1>
+    <h1 class="demo">1</h1>
+    <h1 class="demo">2</h1>
+    firstname<input type="text" name="demo2" /> lastname<input
+      type="text"
+      name="demo3"
+    />
+    <p id="demo4"><br />hello<br />welcome to javascript</p>
+    <p>"hi"</p>
+    <script>
+      console.log(document.getElementById("demo1"));
+      console.log(document.getElementsByClassName("demo"));
+      console.log(document.getElementsByName("demo2"));
+      console.log(document.getElementsByTagName("h1"));
+      console.log(document.querySelector("h1"));
+      console.log(document.querySelectorAll("h1"));
+      console.log(document.getElementById("demo4").innerHTML);
+      console.log(document.getElementById("demo4").textContent);
+      let n = document.createElement("span");
+      n.innerText = "spantag";
+      console.log(n);
+      document.body.appendChild(n);
+      let x = document.getElementById("demo4");
+      let p = x.removeChild(x.firstElementChild);
+      console.log(x);
+      console.log(p);
+    </script>
+  </body>
+</html>

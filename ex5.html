@@ -1,0 +1,49 @@
+<!-- 21B01a1258 -->
+<!-- Q5.Demonstrate how Pseudo classes can be used to create an effective web page  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--21B01A1258--</title>
+    <style>
+        p::first-line{
+    color: red;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p::first-letter{
+    color: blueviolet;
+    font-size: larger;
+    font-style: italic;
+}
+h5::before{
+    content:url("smiling.png");
+}
+a:hover{
+    background-color: blue;
+    color: palevioletred;
+}
+a:visited{
+    color: green;
+}
+div{
+    text-align: center;
+    background-color: bisque;
+    width: 400px;
+    height: 200px;
+}
+div:hover{
+    background-color: blueviolet;
+}
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+     Et a possimus, labore atque reiciendis blanditiis quibusdam id sint obcaecati ut culpa optio ad esse dolore dignissimos!
+     Doloremque soluta maxime pariatur.</p>
+     <a href="">menu bar</a>
+     <div>mouse hover mee</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!--21B01A1258-->
+<!--Demonstrate uses kof arrays and strings in javascript-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>--21B01A1258--</title>
+  </head>
+  <body>
+    <p>To print an elements in array</p>
+    <p id="demo"></p>
+    <p>To delete last element</p>
+    <p id="demo1"></p>
+    <p>To delete first element</p>
+    <p id="demo2"></p>
+    <p>To add 0 at front of the array</p>
+    <p id="demo3"></p>
+    <p>To add an element at the end of the array</p>
+    <p id="demo4"></p>
+    <p>Slice method</p>
+    <p id="demo5"></p>
+    <p>Splice Method</p>
+    <p id="demo6"></p>
+    <p>Concating a string</p>
+    <p id="demo7"></p>
+    <script>
+      const people = ["A", "B", "C", "D"];
+      document.getElementById("demo").innerHTML = people;
+      people.pop();
+      document.getElementById("demo1").innerHTML = people;
+      people.shift();
+      document.getElementById("demo2").innerHTML = people;
+      people.unshift("0");
+      document.getElementById("demo3").innerHTML = people;
+      people.push("E");
+      document.getElementById("demo4").innerHTML = people;
+      const people2 = people.slice(2, 4);
+      document.getElementById("demo5").innerHTML = people2;
+      console.log(people.indexOf("A"));
+      console.log(people.indexOf("B"));
+      people.splice(2, 1, "G", "H");
+      document.getElementById("demo6").innerHTML = people;
+      F = people.concat("F");
+      document.getElementById("demo7").innerHTML = F;
+    </script>
+  </body>
+</html>

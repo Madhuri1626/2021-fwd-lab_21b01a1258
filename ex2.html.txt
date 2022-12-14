@@ -1,0 +1,96 @@
+Skip to content
+Search or jump to…
+Pulls
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@Madhuri1626 
+Madhuri1626
+
+forsample
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+More
+forsampleex2.html
+@Madhuri1626
+Madhuri1626 first
+Latest commit edccae8 9 minutes ago
+ History
+ 1 contributor
+52 lines (52 sloc)  1.11 KB
+
+!--21B01A1258--
+!--Demonstrate table tag to create different orientation of table--
+!DOCTYPE html
+html lang=en
+  head
+    meta charset=UTF-8 
+    meta http-equiv=X-UA-Compatible content=IE=edge 
+    meta name=viewport content=width=device-width, initial-scale=1.0 
+    title--21B01A1258--title
+  head
+  body
+    table width=50% border=1
+      tr
+        thNameth
+        thHobbiesth
+      tr
+      tr
+        td colspan=2Atd
+      tr
+      tr
+        td rowspan=2Btd
+        tdReadingtd
+      tr
+      tr
+        tdBadmintiontd
+      tr
+      tr
+        tdCtd
+        tdDancetd
+      tr
+    table
+brbrbr
+    table width=50% border=1
+        tr
+          thNameth
+          thregistration numberth
+        tr
+        tr
+          tdMadhuritd
+          td21b01a1258td
+        tr
+        tr
+          tdSitatd
+          td21b01a1262td
+        tr
+        tr
+          tdTanutd
+          td21b01a1207td
+        tr
+      table
+  body
+html
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+forsampleex2.html at main · Madhuri1626forsample

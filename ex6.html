@@ -1,0 +1,63 @@
+<!-- 21b01a1258-->
+<!-- flex box in css -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: DodgerBlue;
+        }
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .flex-direction {
+            display: flex;
+            flex-direction: column;
+            background-color: DodgerBlue;
+        }
+        .flex-direction>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        .flex-wrap {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            background-color: DodgerBlue;
+        }
+        .flex-wrap>div {
+            background-color: #f1f1f1;
+            width: 70px;
+            margin: 10px;
+            text-align: center;
+            line-height: 65px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <div class="flex-container"><div>1</div><div>2</div></div>    
+    <h1>Flex Direction</h1>
+    <div class="flex-direction"> <div>1</div> <div>2</div></div>
+    <h1>Flex Wrap</h1>
+    <div class="flex-wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
